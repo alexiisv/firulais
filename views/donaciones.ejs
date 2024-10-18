@@ -1,0 +1,72 @@
+<!-- <h1 >Registro de DONACIONES </h1> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <%- include('./partials/nav') %>
+
+  <div style="display: flex; justify-content: flex-start; gap: 20px; align-items: flex-start; max-width: 800px;  padding: 90px 0px 0 180px ;">
+    <!-- Formulario -->
+    <form action="/donar" method="post" style="flex: 1;">
+
+        <div style="margin-bottom: 15px;">
+         <h1>Registro de Donación</h1>
+          </div>
+
+        <div style="margin-bottom: 15px;" hidden >
+        <label for="idd" style="display: block;">Id:</label>
+        <input type="text" name="idd" id="idd">
+      </div>
+  
+      <div style="margin-bottom: 15px;">
+        <label for="nombre_donador" style="display: block;">Nombre donador:</label>
+        <input type="text" name="nombre_donador" id="nombre_donador" style="width: 100%; padding: 8px; box-sizing: border-box;">
+      </div>
+  
+      <div style="margin-bottom: 15px;">
+        <label for="donacion" style="display: block;">Tipo de donación:</label>
+        <select name="donacion" id="donacion" style="width: 100%; padding: 8px; box-sizing: border-box;">
+          <option value="dinero">Dinero</option>
+          <option value="alimento">Alimento</option>
+          <option value="otros">Otros</option>
+        </select>
+      </div>
+      
+    <div style="text-align: center;">
+        <input type="submit" value="Registar Donacion" style="padding: 10px 20px; background-color: #4CAF50; color: white; border: none; cursor: pointer;">
+        
+    </div>
+    </form>
+</div>
+
+    <div style="padding: 60px 0 0 180px">
+        <h1>Realiza tus Donaciones por VAKI</h1>
+        <a href="https://n9.cl/donafirulais/" 
+        style="padding: 10px 20px; background-color: #4CAF50; color: white; border: none; cursor: pointer;">Aqui</a> 
+    </div>  <br>
+
+    <div style="padding: 20px 0 0 500px">
+        <label for="">Dirección para hacer llegar tus donaciones:</label><br>
+        <label>Sede Principal:</label><br>
+        <label>Calle 20 # 33-60, Pasto, Colombia</label>
+    </div>
+    <div class="map-container">
+      <h2>Ubicación</h2>
+      <div class="map-responsive">
+          <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.153410071318!2d144.95707381532228!3d-37.81421787975153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d47f48f9e37%3A0x208f3de5eae2f0a!2sFederation%20Square!5e0!3m2!1sen!2sau!4v1632314382006!5m2!1sen!2sau" 
+              width="100%" 
+              height="450" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy"
+          ></iframe>
+      </div>
+  </div>
+</body>
+</html>

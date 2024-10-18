@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Adopcion</title>
+</head>
+<body>
+
+    <%- include('./partials/nav') %>
+    <!-- <h1 >Registro de nuevo Usuario</h1> -->
+    <div style="display: flex; justify-content: flex-start; gap: 20px; align-items: flex-start; max-width: 800px; padding: 90px 0px 0 180px;">
+        <!-- Formulario -->
+        <form action="/adoptar" method="post" style="flex: 1;">
+
+            <div style="margin-bottom: 15px;">
+             <h1>Registro de Adopcion</h1>
+              </div>
+
+            <div style="margin-bottom: 15px;" hidden >
+            <label for="ida" style="display: block;">Id:</label>
+            <input type="text" name="ida" id="ida">
+          </div>
+      
+          <div style="margin-bottom: 15px;">
+            <label for="nombre_adopt" style="display: block;">Nombre de Adoptante:</label>
+            <input type="text" name="nombre_adopt" id="nombre_adopt" style="width: 100%; padding: 8px; box-sizing: border-box;">
+          </div>
+      
+          <div style="margin-bottom: 15px;">
+            <label for="email" style="display: block;">Correo:</label>
+            <input type="email" name="email" id="email" style="width: 100%; padding: 8px; box-sizing: border-box;">
+          </div>
+
+          <div style="margin-bottom: 15px;">
+            <label for="cel" style="display: block;">Celular:</label>
+            <input type="text" name="cel" id="cel" style="width: 100%; padding: 8px; box-sizing: border-box;">
+          </div>
+
+          <div style="margin-bottom: 15px;">
+            <label for="ubic" style="display: block;">Ubicacion:</label>
+            <input type="text" name="ubic" id="ubic" style="width: 100%; padding: 8px; box-sizing: border-box;">
+          </div>
+      
+          
+      
+          <div style="text-align: center;">
+            <input type="submit" value="Registrar" style="padding: 10px 20px; background-color: #4CAF50; color: white; border: none; cursor: pointer;">
+            
+        </div>
+        </form>
+      
+        <!-- Imagen y Descripción -->
+        <div style="flex: 1; text-align: center; padding-top: 50px;" >
+          <img src="img/perros.jpg" alt="Descripción del animal" style="max-width: 100%; height: auto; border-radius: 8px;">
+          <p style="margin-top: 10px;">Imagen de la Mascota de la mascosta.</p>
+          <p style="margin-top: 10px;">Descripcion de la mascota y sus necesidades.</p>
+        </div>
+      </div>
+     
+</body>
+</html>

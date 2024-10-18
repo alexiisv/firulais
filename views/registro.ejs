@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+</head>
+<body>
+  <div style="background-color: #FAF3E0">
+
+ 
+    <%- include('./partials/nav') %>
+    
+    <!-- <h1 >Registro de nuevo Usuario</h1> -->
+    <div style="display: flex; justify-content: flex-start; gap: 20px; align-items: flex-start; max-width: 800px; padding: 90px 0px 0 180px ;">
+        <!-- Formulario -->
+        <form action="/validar" method="post" style="flex: 1;">
+
+            <div style="margin-bottom: 15px;">
+             <h1>Registro de Mascota</h1>
+              </div>
+
+            <div style="margin-bottom: 15px;" hidden >
+            <label for="idt" style="display: block;">Id:</label>
+            <input type="text" name="idt" id="idt">
+          </div>
+      
+          <div style="margin-bottom: 15px;">
+            <label for="nombre_animal" style="display: block;">Nombre Animal:</label>
+            <input type="text" name="nombre_animal" id="nombre_animal" style="width: 100%; padding: 8px; box-sizing: border-box;">
+          </div>
+      
+          <div style="margin-bottom: 15px;">
+            <label for="ubic" style="display: block;">Ubicación:</label>
+            <input type="text" name="ubic" id="ubic" style="width: 100%; padding: 8px; box-sizing: border-box;">
+          </div>
+      
+          <div style="margin-bottom: 15px;">
+            <label for="vulner" style="display: block;">Vulnerabilidad:</label>
+            <select name="vulner" id="vulner" style="width: 100%; padding: 8px; box-sizing: border-box;">
+              <option value="abandono">Abandono</option>
+              <option value="enfermedad">Enfermedad</option>
+              <option value="maltrato">Maltrato</option>
+            </select>
+          </div>
+      
+          <div style="margin-bottom: 15px;">
+            <label for="ayud" style="display: block;">Ayuda:</label>
+            <select name="ayud" id="ayud" style="width: 100%; padding: 8px; box-sizing: border-box;">
+              <option value="alimentos">Alimentos</option>
+              <option value="adopcion">Adopción</option>
+              <option value="hogar">Hogar de paso</option>
+            </select>
+          </div>
+      
+          <div style="text-align: center;">
+            <input type="submit" value="Registrar" style="padding: 10px 20px; background-color: #4CAF50; color: white; border: none; cursor: pointer;">
+            
+        </div>
+        </form>
+      
+        <!-- Imagen y Descripción -->
+        <div style="flex: 1; text-align: center; padding-top: 50px;" >
+          <img src="img/perros.jpg" alt="Descripción del animal" style="max-width: 100%; height: auto; border-radius: 8px;">
+          <p style="margin-top: 10px;">Subir Imagen de la Mascota.</p>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
