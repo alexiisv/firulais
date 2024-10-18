@@ -17,7 +17,7 @@
 - Express.js
 - EJS (Embedded JavaScript)
 - MySQL
-- Firebase (para despliegue y autenticación)
+
 
 ## Captura de Pantalla
 
@@ -25,7 +25,7 @@ Aquí hay una captura de pantalla de la aplicación:
 
 ![alt text](image.png)
 
-![Página de Inicio de Firulais](https://path-to-your-image.com/image.png)
+![Página de Inicio de Firulais][alt text](image.png)
 
 ## Instalación
 
